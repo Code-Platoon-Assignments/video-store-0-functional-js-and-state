@@ -1,4 +1,4 @@
-# Video Store Project - Part 0
+# Video Store Project - Part 0 - Practicing Modern JS
 
 We will use what we have learned to build the logic to handle the data for a video store. We will do this in JS and make a node project for it.
 
