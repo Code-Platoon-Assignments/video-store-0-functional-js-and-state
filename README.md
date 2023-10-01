@@ -1,8 +1,12 @@
-# Video Store Project
-gg
+# Video Store Project - Part 0
+
 We will use what we have learned to build the logic to handle the data for a video store. We will do this in JS and make a node project for it.
 
-## Tasks
+## Instructions & Advice
+
+Depending on your experience level this may be a big assignment, but it builds up in logical steps. Do not worry if you don't complete every step.
+
+If you do finish this assignment and have time on your hands, continue adding features to the video store following the patterns you have been shown here. Feel free to reach out to an Instructor or TA if you would like additional guidance on how to do this.
 
 ### Project setup
 
