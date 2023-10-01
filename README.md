@@ -205,6 +205,13 @@ Refactor your program, so that it logs, in our *customer* object:
 1. The datetime when a video was checked out.
 1. The datetime when a video was return.
 
+
+### Stretch Goal: All customers who have checked-out videos
+
+Write a function using `.filter()` to get an array of all customers who have 1 or more videos checked out. Then, modify your function so that it gets all customers with at least 2 videos checked out, or at least 5 videos checked out, etc.
+
+Then, modify your function so it it also sorts the array of customers by number of checked-out videos. The person with the most videos checked out should be first!
+
 ### New Feature: Genres
 
 Add a genre to each movie. Feel free to make them up. It is up to you if a movie can have one or more genres.
@@ -212,3 +219,32 @@ Add a genre to each movie. Feel free to make them up. It is up to you if a movie
 ### New Feature: Find by genre
 
 Write a `findVideosByGenre()` function. It should follow the same pattern as our previous functions. **Important:** You should assume this function will sometimes return more than one video, as there normally many videos of the same genre!
+
+### Stretch Goal: Get a list of all genres
+
+Use `.map()` to get an array listing all genres. **Make sure it is a flat array**, meaning this:
+
+```javascript
+['western', 'romance', 'drama', 'adventure']
+```
+
+... and not this:
+
+```javascript
+[['western', 'drama'], ['romance', 'adventure']]
+```
+
+### Stretch Goal: Construct a genre dictionary
+
+Use `reduce()` to create an object which has each genre as a property, and then an array of movie ids belonging to that genre. It should look something like this:
+
+```javscript
+{
+    western: [ "abc123" ],
+    drama: [ "abc123", "xyz456", ],
+    romance: [ "xyz456", "dd344" ],
+    adventure: ["dd344"],
+}
+```
+
+Note that a film ID may be listed under multiple genres here.
