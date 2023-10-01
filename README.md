@@ -76,7 +76,6 @@ We set our entry point to `app.js`
 
 **Like so:**
 
-
 *example of another person using our program in their code*
 
 ```node
