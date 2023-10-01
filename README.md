@@ -60,6 +60,9 @@ const inventory = inventoryJson
 
 The above approach is worth trying. Even if it is overkill in this specific case, method-chaining like this is a technique you will see used more and more, and, it offers the advantage of being able think about each step in smaller chunks - which is easier to do and easier to implement. You're less likely to make errors.
 
+#### Stretch goal: use date-fns
+
+Instead of using JS's built-in `Date()` function by itself, use the [date-fns](https://date-fns.org/) npm module. [dayjs](https://day.js.org/) is a popular alternative as well. Note that you'll have to install them with npm.
 ### Users!
 
 We need some users. We want something like the following:
@@ -194,7 +197,9 @@ function checkoutVideo(state, customerId, videoId) {
 
 Now, write a `returnVideo()` function that returns the same way.
 
-**Stretch goal / challenge:** Refactor your program, so that it logs, in our *customer* object:
+#### Stretch goal: Add a customer history  
+
+Refactor your program, so that it logs, in our *customer* object:
 
 1. A history of all videos ever checked out by the customer
 1. The datetime when a video was checked out.
